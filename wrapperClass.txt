@@ -1,0 +1,15 @@
+Last login: Fri Jul 25 17:43:15 on ttys001
+                                                                                
+
+jason@JasonsMac\n\nJasonsMac ~ % jshell
+|  Welcome to JShell -- Version 17.0.12
+|  For an introduction type: /help intro
+
+jshell> System.out.print(Integer.MAX_VALUE + 1)
+-2147483648
+jshell> System.out.print(Integer.MIN_VALUE - 1)
+2147483647
+jshell> 
+
+/* Java uses wrapperClasses; a way of converting primitive data types into classes. These wrapper classes that "wrap" around the primitive datatype have specific methods assigned to them. Specifically, methods that avoid an error message when computing using a primitive data type. Above is an example in jshell. When adding a 1 to the max value of the int or subtracting a 1 from the min value of the int, no error message is shown, instead if goes around to the min value or the max value.
+*/
