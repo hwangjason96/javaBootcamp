@@ -1,3 +1,25 @@
+Last login: Fri Jul 25 17:26:21 on ttys001
+                                                                                
+
+jason@JasonsMac\n\nJasonsMac ~ % jshell
+|  Welcome to JShell -- Version 17.0.12
+|  For an introduction type: /help intro
+
+jshell> System.out.print(Integer.MIN_VALUE);
+-2147483648
+jshell> System.out.print(Integer.MAX_VALUE);
+2147483647
+jshell> System.out.print(Float.MAX_VALUE);
+3.4028235E38
+jshell> System.out.print(Float.MIN_VALUE);
+1.4E-45
+jshell> System.out.print(Bool.MIN_VALUE);
+|  Error:
+|  cannot find symbol
+|    symbol:   variable Bool
+|  System.out.print(Bool.MIN_VALUE);
+|                   ^--^
+
 jshell> System.out.print(Boolean.MIN_VALUE);
 |  Error:
 |  cannot find symbol
