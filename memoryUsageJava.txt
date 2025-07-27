@@ -1,0 +1,72 @@
+Last login: Sun Jul 27 12:57:23 on ttys000
+                                                                                
+
+jason@JasonsMac\n\nJasonsMac ~ % jshell
+|  Welcome to JShell -- Version 17.0.12
+|  For an introduction type: /help intro
+
+jshell> System.out.print("Integer Range: " + Integer.MAX_VALUE + " ~ " + Integer.MIN_VALUE);
+Integer Range: 2147483647 ~ -2147483648
+jshell> System.out.print("Byte Range: " + Byte.MAX_VALUE + " ~ " + Byte.MIN_VALUE);
+Byte Range: 127 ~ -128
+jshell> System.out.print("Short Range: " + Short.MAX_VALUE + " ~ " + Short.MIN_VALUE);
+Short Range: 32767 ~ -32768
+jshell> System.out.print("Long Range: " + Long.MAX_VALUE + " ~ " + Long.MIN_VALUE);
+Long Range: 9223372036854775807 ~ -9223372036854775808
+jshell> //factorial attempt again using long!
+
+jshell> int factIndex = 100;
+factIndex ==> 100
+
+jshell> for (int i = 0; i<factIndex; i++) {
+   ...>     //...I messed up
+   ...> }
+
+jshell> long answer = 0L
+answer ==> 0
+
+jshell> answer = 1L
+answer ==> 1
+
+jshell> for (int i =0 ; i<factIndex;  i++) {
+   ...>     answer *= (i+1);
+   ...> }
+
+jshell> System.out.print(answer);
+0
+jshell> //still doesn't work??
+
+jshell> //100 factorial might be still too large
+
+jshell> int factIndex = 50;
+factIndex ==> 50
+
+jshell> for (int i =0 ; i<factIndex;  i++) {
+   ...>     answer *= (i+1);
+   ...> }
+
+jshell> System.out.print(answer);
+0
+jshell> //???
+
+jshell> //may be still too large
+
+jshell> factIndex = 30
+factIndex ==> 30
+
+jshell> //forgot semicolon
+
+jshell> //also forgot that I needed to reset the answer
+
+jshell> answer = 0L
+answer ==> 0
+
+jshell> for (int i =0 ; i<factIndex;  i++) {
+   ...>     answer *= (i+1);
+   ...> }
+
+jshell> System.out.print(answer);
+0
+jshell> //?????????
+
+jshell> 
