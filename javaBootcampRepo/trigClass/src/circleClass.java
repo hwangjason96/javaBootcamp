@@ -3,7 +3,7 @@
 //importing the math class so that I can do some magic.
 import java.lang.Math;
 import java.util.Scanner;
-
+//changes
 public class circleClass {
     //double is the only way the math class computes
     private static double radius;
