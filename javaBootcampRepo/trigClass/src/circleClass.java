@@ -10,15 +10,15 @@ public class circleClass {
     private static double angleRadian;
 
     //Constructors
-    circleClass(){
+    public circleClass(){
         radius = 0;
         angleRadian = 0;
     }
-    circleClass(double inRadius, double inAngleRadian) {
+    public circleClass(double inRadius, double inAngleRadian) {
         radius = inRadius;
         angleRadian = inAngleRadian;
     }
-    circleClass(double inRadius){
+    public circleClass(double inRadius){
         radius = inRadius;
         angleRadian = 0;
     }
