@@ -1,6 +1,13 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+//THIS IS A WRONG INTERPRETATION OF THE POLYMORPHISM CONCEPT.
+//THE SPECIAL THING ABOUT POLYMORPHISM IS THIS (GIVEN TWO CLASSES, ONE GENERIC AND THE OTHER SPECIFIC) :
+//generic var_name = new specific();
+//The specific class adds onto the inherited function of the generic.
+//This example is faulty in that my approach is a bit too general. It needs to be more specific.
+//One cannot have a list of occupations that adds onto the class of a person.
+//a specific job like a firefighter or a policeman is more apt.
 public class Main {
     public static void main(String[] args) {
         //Write a program that enters a list of people in a group.
