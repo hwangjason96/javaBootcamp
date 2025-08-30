@@ -1,3 +1,6 @@
+//The class that has an inheritance is more extensive than the one that is not.
+//Therefore, ironically the broader class needs to have the extends keyword. Person is more broad than just an occupation, and therefore it has the extends keyword.
+//This is incredibly perplexing. No example online has the more general class be included with extends.
 public class person extends occupation {
     private String name;
     private String nationality;

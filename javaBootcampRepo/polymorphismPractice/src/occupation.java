@@ -1,3 +1,4 @@
+//less general class has no extends.
 public class occupation {
     private String occupationName;
     private String occupationLocation;
