@@ -1,41 +1,43 @@
-public class occupation extends person {
+public class occupation {
     private String occupationName;
     private String occupationLocation;
     private double occupationSalary;
-    private person assignedPerson;
 
     public occupation() {
         occupationName = "";
         occupationLocation = "";
         occupationSalary = 0.0;
-        assignedPerson = new person();
     }
     public occupation(String inOccupationName) {
         occupationName = inOccupationName;
+        occupationLocation = "";
+        occupationSalary = 0.0;
     }
     public occupation(String inOccupationName, String inOccupationLocation) {
         occupationName = inOccupationName;
         occupationLocation = inOccupationLocation;
-    }
-    public occupation(String inOccupationName, String inOccupationLocation, double inOccupationSalary) {
-        occupationName = inOccupationName;
-        occupationLocation = inOccupationLocation;
-        occupationSalary = inOccupationSalary;
+        occupationSalary = 0.0;
     }
     public occupation(String inOccupationName, String inOccupationLocation, double inOccupationSalary, person inPerson) {
         occupationName = inOccupationName;
         occupationLocation = inOccupationLocation;
         occupationSalary = inOccupationSalary;
-        assignedPerson = new person(inPerson);
     }
     public occupation(occupation inOccupation) {
         occupationName = inOccupation.occupationName;
         occupationLocation = inOccupation.occupationLocation;
         occupationSalary = inOccupation.occupationSalary;
-        assignedPerson = inOccupation.assignedPerson;
     }
 
     //getter setter
+    public Boolean isOccupied() {
+        if (!occupationName.isEmpty()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
     public String getOccupationName() {
         return occupationName;
     }
@@ -44,9 +46,6 @@ public class occupation extends person {
     }
     public double getOccupationSalary() {
         return occupationSalary;
-    }
-    public person getAssignedPerson() {
-        return assignedPerson;
     }
 
     public void setOccupationName(String inOccupationName) {
@@ -58,9 +57,4 @@ public class occupation extends person {
     public void setOccupationSalary(double inOccupationSalary) {
         occupationSalary = inOccupationSalary;
     }
-    public void setAssignedPerson(person inAssignedPerson) {
-        assignedPerson = inAssignedPerson;
-    }
-
-
 }

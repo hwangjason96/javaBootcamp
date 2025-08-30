@@ -1,4 +1,4 @@
-public class person {
+public class person extends occupation {
     private String name;
     private String nationality;
     private int age;
@@ -16,16 +16,19 @@ public class person {
         name = inName;
         nationality = "";
         age = 0;
+        job = new occupation();
     }
     public person(String inName, String inNationality) {
         name = inName;
         nationality = inNationality;
         age = 0;
+        job = new occupation();
     }
     public person(String inName, String inNationality, int inAge) {
         name = inName;
         nationality = inNationality;
         age = inAge;
+        job = new occupation();
     }
     public person(String inName, String inNationality, int inAge, occupation inJob) {
         name = inName;
@@ -65,6 +68,6 @@ public class person {
         age = inAge;
     }
     public void setJob(occupation inJob) {
-        job = new occupation(inJob);
+        job = inJob;
     }
 }
