@@ -35,4 +35,32 @@ public class occupation extends person {
         assignedPerson = inOccupation.assignedPerson;
     }
 
+    //getter setter
+    public String getOccupationName() {
+        return occupationName;
+    }
+    public String getOccupationLocation() {
+        return occupationLocation;
+    }
+    public double getOccupationSalary() {
+        return occupationSalary;
+    }
+    public person getAssignedPerson() {
+        return assignedPerson;
+    }
+
+    public void setOccupationName(String inOccupationName) {
+        occupationName = inOccupationName;
+    }
+    public void setOccupationLocation(String inOccupationLocation) {
+        occupationLocation = inOccupationLocation;
+    }
+    public void setOccupationSalary(double inOccupationSalary) {
+        occupationSalary = inOccupationSalary;
+    }
+    public void setAssignedPerson(person inAssignedPerson) {
+        assignedPerson = inAssignedPerson;
+    }
+
+
 }
